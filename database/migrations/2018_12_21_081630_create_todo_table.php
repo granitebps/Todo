@@ -17,7 +17,10 @@ class CreateTodoTable extends Migration
             $table->increments('id');
             $table->text('todo');
             $table->boolean('completed')->default(0);
+            $table->integer('user_id')->unsigned();
             $table->timestamps();
+
+            $table->foreign('user_id')->references('id')->on('users');
         });
     }
 

@@ -21,7 +21,11 @@
                         <table class="table table-bordered">
                             <tr>
                                 <th width=680>{{$todo->todo}}</th>
-                                <th width=100><a href="/todo/{{$todo->id}}/edit" class="btn btn-primary">Update</a></th>
+                                @if ($todo->completed == 0)
+                                    <th width=100>
+                                        <a href="/todo/{{$todo->id}}/edit" class="btn btn-primary">Update</a>
+                                    </th>
+                                @endif
                                 <th width=100>
                                     <form action="/todo/{{$todo->id}}" method="post">
                                         {{ csrf_field() }}

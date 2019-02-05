@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Laravel</title>
+        <title>ToDo List App</title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet" type="text/css">
@@ -67,7 +67,6 @@
         <div class="flex-center position-ref full-height">
             @if (Route::has('login'))
                 <div class="top-right links">
-                        <a href="{{ url('/todo') }}">Todo</a>
                     @auth
                         <a href="{{ url('/home') }}">Home</a>
                     @else
@@ -82,16 +81,14 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel
+                    ToDo List App
                 </div>
 
                 <div class="links">
-                    <a href="https://laravel.com/docs">Documentation</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://nova.laravel.com">Nova</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
+                    <a target="_blank" href="https://granitebps.com/">Granite Bagas Website</a>
+                    <a target="_blank" href="https://www.linkedin.com/in/granitebps/">Granite Bagas LinkedIn</a>
+                    <a target="_blank" href="https://github.com/granitebps/TodoLaravel">ToDo List App Repository</a>
+                    <a target="_blank" href="https://github.com/granitebps">Granite Bagas GitHub</a>
                 </div>
             </div>
         </div>
